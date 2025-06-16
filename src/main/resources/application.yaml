@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: http3-demo
+  ssl:
+    bundle:
+      jks:
+        server-http3:
+          key:
+            alias: mysslkey
+          keystore:
+            location: classpath:keystore.p12
+            password: 123456
+            type: PKCS12
